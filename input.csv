@@ -1,0 +1,6 @@
+Account -ABC with $100 K in total asset (100% is vested),Security,target [%],current[%],target variance [%],unit price,outpout number of shares to buy/sell
+,IBM,20,10,-10,150,???
+,MSFT,20,20,0,90,???
+,ORCL,20,30,10,220,???
+,AAPL,20,20,0,450,???
+,HD,20,20,0,70,???
