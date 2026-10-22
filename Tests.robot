@@ -4,21 +4,19 @@ Library           StockLib.py
 
 *** Test Cases ***
 Validate If Sum Of Values For Target Percentage Column Is Equal 100
-    [Documentation]  The purpose of this test is to verify if sum of target percentage column from csv file
-    ...  is equal 100
+    [Documentation]
     [Tags]  TEST_ID=1
 
     Sum Of Values For Target Percentage Column Should Equal  100
 
 Validate If Sum Of Values For Current Percentage Column Is Equal 100
-    [Documentation]  The purpose of this test is to verify if sum of current percentage column from csv file
-    ...  is equal 100
+    [Documentation]
     [Tags]  TEST_ID=2
 
     Sum Of Values For Current Percentage Column Should Equal  100
 
 Validate If Target Variance Is Calculated Based On Target And Current
-    [Documentation]  The purpose of this test is to verify if target variance is calculated correctly
+    [Documentation]
     [Tags]  TEST_ID=3
 
     Target Variance Is Calculated Correctly
@@ -43,6 +41,6 @@ Validate If Calculated Output Number Of Shares To Buy Or Sell Is Correct
 
 Simulate That Calculated Output Number Of Shares To Buy Or Sell Is Incorrect
     [Documentation]
-    [Tags]  TEST_ID=6
+    [Tags]  TEST_ID=7
 
     Run Keyword And Expect Error  *  Simulate Output Number Of Shares Is Incorrect
