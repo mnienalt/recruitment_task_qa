@@ -4,6 +4,7 @@ Library           ${CURDIR}${/}ShareCalculationLibrary.py
 Test Template     Share Recommendation Scenario
 
 *** Test Cases ***    VARIANCE       UNIT-PRICE    EXPECTED-BUY    EXPECTED-SELL    EXPECTED-RECOMMENDATION    EXPECTED-ERROR
+Buy trolo             -1            2000          0.5             0                0                           NONE
 Buy 0.5 Shares        -1            2000          0.5             0                0                           NONE
 Buy 1.5 Shares        -3            2000          1.5             0                2                           NONE
 Sell 0.5 Shares       1             2000          0               0.5              0                           NONE

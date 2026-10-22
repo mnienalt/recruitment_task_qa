@@ -66,6 +66,58 @@ class StockExchangeCalculator:
         print(f'Presenting output file - additional columns added: {self.output_file}')
         print(table)
 
+    def save_and_print_results_simplified(self):
+        self.df = self.df.fillna('')
+
+        # cols_to_drop = [col for col in self.df.columns if '_' in col]
+        # self.df.drop(columns=cols_to_drop, inplace=True)
+
+        # from pdb import set_trace
+        # set_trace()
+        self.df.to_csv(self.output_file, index=False)
+
+        cols_to_drop = [col for col in self.df.columns if '_' in col and 'planned_value_of_shares_to_be_acquired_or_sold' not in col]
+        self.df.drop(columns=cols_to_drop, inplace=True)
+
+        table = PrettyTable()
+        table.field_names = self.df.columns.tolist()
+
+        table.add_rows(self.df.values.tolist())
+
+        print(f'Presenting output file: {self.output_file}')
+        print(table)
+
+    def save_and_print_results_normal(self):
+        self.df = self.df.fillna('')
+
+        cols_to_drop = [col for col in self.df.columns if '_' in col]
+        self.df.drop(columns=cols_to_drop, inplace=True)
+
+
+        self.df.to_csv(self.output_file, index=False)
+
+
+
+        table = PrettyTable()
+        table.field_names = self.df.columns.tolist()
+
+        table.add_rows(self.df.values.tolist())
+
+        print(f'Presenting output file: {self.output_file}')
+        print(table)
+
+
+    def save_and_print_results_transposed(self):
+        self.df_transposed = self.df.fillna('').T
+        self.df_transposed.to_csv(self.output_file, index=False)
+
+        table = PrettyTable()
+        table.field_names = self.df_transposed.columns.tolist()
+
+        table.add_rows(self.df_transposed.values.tolist())
+
+        print(f'Presenting output file transposed - additional columns added: {self.output_file}')
+        print(table)
 
 if __name__ == '__main__':
     stock_ex_calc = StockExchangeCalculator()

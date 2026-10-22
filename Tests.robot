@@ -25,12 +25,24 @@ Validate If Target Variance Is Calculated Based On Target And Current
 
 Validate If Target Percent Is Always A NUmber From <0;100>
     [Documentation]
-    [Tags]  TEST_ID=3
+    [Tags]  TEST_ID=4
 
     Target Percent Between 0 And 100
 
 Validate If Current Percent Is Always A NUmber From <0;100>
     [Documentation]
-    [Tags]  TEST_ID=3
+    [Tags]  TEST_ID=5
 
     Current Percent Between 0 And 100
+
+Validate If Calculated Output Number Of Shares To Buy Or Sell Is Correct
+    [Documentation]
+    [Tags]  TEST_ID=6
+
+    Calculated Output Number Of Shares Is Correct
+
+Simulate That Calculated Output Number Of Shares To Buy Or Sell Is Incorrect
+    [Documentation]
+    [Tags]  TEST_ID=6
+
+    Run Keyword And Expect Error    *    Simulate Output Number Of Shares Is Incorrect

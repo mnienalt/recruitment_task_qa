@@ -49,6 +49,6 @@ def calculate_number_of_shares_to_sell(deviation, unit_price):
     return result
 
 
-@np.vectorize
+@np.vectorize(otypes=[float])
 def calc_output_number(number_to_buy, number_to_sell):
-    return round(max(number_to_buy, number_to_sell))
+    return max(number_to_buy, number_to_sell)

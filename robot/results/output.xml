@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.5 (Python 3.14.5 on win32)" generated="2026-10-21T22:48:02.554724" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\mnien\gitrepo\recruitment_task_qa\robot\Tests.robot">
+<test id="s1-t1" name="Validate If Sum Of Values For Percentage Column Is Equal 100" line="6">
+<kw name="Sum Of Values For Percentage Column Should Equal" owner="StockLib">
+<msg time="2026-10-21T22:48:03.436784" level="FAIL">AssertionError</msg>
+<arg>100</arg>
+<status status="FAIL" start="2026-10-21T22:48:03.436298" elapsed="0.001746">AssertionError</status>
+</kw>
+<doc>The purpose of this test is to run REST query against extract node and verify the response
+for cycle numbers</doc>
+<tag>TEST_ID=</tag>
+<status status="FAIL" start="2026-10-21T22:48:03.434176" elapsed="0.004168">AssertionError</status>
+</test>
+<status status="FAIL" start="2026-10-21T22:48:02.557704" elapsed="0.881500"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">TEST_ID=</stat>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="0" fail="1" skip="0">Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
